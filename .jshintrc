@@ -8,6 +8,7 @@
   "immed": true,
   "indent": 4,
   "latedef": true,
+  "node": true,
   "newcap": true,
   "noarg": true,
   "quotmark": "single",

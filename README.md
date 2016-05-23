@@ -47,3 +47,14 @@ Your resume json file. Please review the [schema here](https://jsonresume.org/sc
 
 ## Building the project
 When you run `npm start` or choose to manually build the project using `gulp`, it will generate a `/public` folder, where its contents will be created after running the appropraite gulp tasks against the `/app` folder. Essentially, the app folder is essentially what we develop against, and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run agianst this folder.
+
+## Ignoring changes in reusme.json
+If you want to modify the theme but don't necessarily want to propogate the changes made in resume.json, you can easily untrack that file by running the following command:
+```
+git update-index --assume-unchanged resume.json
+```
+
+If you want to track the file again, you can run:
+```
+git update-index --no-assume-unchanged resume.json
+```

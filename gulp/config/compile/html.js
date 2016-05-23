@@ -3,12 +3,12 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 
-gulp.task('html', ['styles', 'fonts'], function() {
+gulp.task('html', function() {
     var lazypipe = require('lazypipe');
     var cssChannel = lazypipe()
         .pipe($.csso);
 
-    var assets = $.useref.assets({ searchPath: '{app, .}' }); // search .tmp, app and ./bower_components for all referenced files
+    var assets = $.useref.assets({ searchPath: '{app, .}' }); // search app and ./bower_components for all referenced files
 
     return gulp.src(['app/**/*.hbs'])
         .pipe(assets)

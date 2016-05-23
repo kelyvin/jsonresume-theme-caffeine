@@ -46,6 +46,7 @@
     "wiredep": "^2.0.0"
   },
   "dependencies": {
-    "handlebars": "^4.0.5"
+    "handlebars": "^4.0.5",
+    "handlebars-wax": "^4.0.0"
   }
 }

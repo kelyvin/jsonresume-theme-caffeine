@@ -1,0 +1,7 @@
+{
+  "name": "jsonresume-theme-caffeine",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "~4.4.0"
+  }
+}

@@ -1,0 +1,58 @@
+// bower:scss
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
+
+body {
+    background: #fff;
+    font: 15px Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    margin: 50px 0;
+    margin-bottom: 100px;
+}
+em {
+    color: #999;
+}
+p {
+    line-height: 1.4;
+}
+ul {
+    margin-bottom: 0;
+}
+section {
+    margin-bottom: 2em;
+}
+blockquote {
+    margin: 0;
+    margin-bottom: 1em;
+}
+.item {
+    margin-bottom: 1em;
+}
+#resume {
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 0 20px;
+}
+#basics {
+    margin-bottom: -10px;
+}
+#basics h3 {
+    margin-top: 1.5em;
+}
+#basics .contact strong,
+#location strong {
+    clear: both;
+    float: left;
+    line-height: 1.3;
+    width: 120px;
+}
+#profiles,
+#skills {
+    overflow: hidden;
+}
+#profiles .item,
+#skills .item {
+    float: left;
+    width: 50%;
+}
+

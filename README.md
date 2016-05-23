@@ -31,7 +31,7 @@ npm start
 Running the command above will automatically build your project, load your resume with the theme, listen for changes, and automatically refresh the browser on file changes.
 
 ## Developer Environment
-The environment has two main folders when you first clone the repo (`app` and `gulp`) as well as two core files (`index.js` and `resume.json`). If you've already read through the [jsonresume-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate), most of this should be straightforward.
+The environment has two main folders when you first clone the repo (`app` and `gulp`) as well as a core files (`index.js`). If you've already read through the [jsonresume-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate), most of this should be straightforward.
 
 ### /app
 The app folder holds all of your theme assets. The file system should be straightforward. All views will be under the `/views`  folder, which contains`resume.hbs`, the main Handlebars template that will be used and send to the theme server to render your resume. The  `/styles` folder contains all of your SASS stylesheets.
@@ -42,8 +42,17 @@ The gulp folder holds all the modularized gulp tasks/configs. Anything gulp rela
 ### index.js
 This is the file that will return the needed HTML to the theme server and run against the resume-cli. Not much change here from the jsonresume-theme-boilerplate except that it accomodates the new file system.
 
-### resume.json
-Your resume json file. Please review the [schema here](https://jsonresume.org/schema/).
+## Creating your resume.json
+This project comes with `resume-sample.json`, which is a sample json resume you can build from. This will automatically be served by the app if you don't create a `resume.json` file.
+
+It is **recommended** to create your own `resume.json` within the directory for your own resume. This file is automatically ignored from GIT to ensure you cannot check it in (since most likely you'll have very personal information on there). If you do decide to check it in, you can simply comment the following line in `.gitignore` like so:
+
+```
+# Keep your personal resume.json private
+#resume.json
+```
+
+Please review the [schema here](https://jsonresume.org/schema/).
 
 ## Building the project
 When you run `npm start` or choose to manually build the project using `gulp`, it will generate a `/public` folder, where its contents will be created after running the appropraite gulp tasks against the `/app` folder. Essentially, the app folder is essentially what we develop against, and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run agianst this folder.

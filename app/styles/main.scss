@@ -2,12 +2,15 @@
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
+@import 'fonts';
+
 body {
     background: #fff;
-    font: 15px Arial, Helvetica, sans-serif;
     line-height: 1.4;
     margin: 50px 0;
     margin-bottom: 100px;
+
+    @include lato(300);
 }
 em {
     color: #999;

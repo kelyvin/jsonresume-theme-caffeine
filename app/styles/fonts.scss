@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic|Josefin+Sans:300,700);
+
+// Font Mixins
+
+// Lato - 300, 400, 700; Italics
+@mixin lato($weight: 400, $isItalic: false){
+    font-family: 'Lato', sans-serif;
+    font-weight: $weight;
+
+    @if $isItalic == 'true' {
+        $font-style: italic;
+    }
+}
+
+// Josefin - 300, 400, 600, 700
+@mixin josefin($weight: 400){
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: $weight;
+}

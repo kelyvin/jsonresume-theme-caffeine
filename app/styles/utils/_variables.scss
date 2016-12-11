@@ -1,0 +1,38 @@
+/*----- Colors -----*/
+
+$gray-darkest           : #333;
+$gray-darker            : #666;
+$gray-dark              : #999;
+$gray                   : #ccc;
+$gray-light             : #ddd;
+$gray-lighter           : #eee;
+$gray-lightest          : #f8f8f8;
+
+$slate-white            : #F6F4E9;
+$red                    : #7C221A;
+$brown                  : #85715F;
+$slate-gray             : #39424B;
+$slate-green            : #56817A;
+$midnight-blue          : #222F38;
+
+$primary-color          : $slate-green;
+$secondary-color        : $slate-gray;
+
+$link-color             : #2895F1;
+
+/*----- Fonts -----*/
+
+$unit                   : 1em;
+$primary-font           : 'Lato', Helvetica, Arial, sans-serif;
+$secondary-font         : 'Josefin Sans', Helvetica, Arial, sans-serif;
+
+/*----- Dimensions and sizes -----*/
+
+$page-width             : 21cm;
+$page-height            : 29.7cm;
+
+$mobile-width           : 435px;
+$tablet-width           : 768px;
+$laptop-width           : 992px;
+$desktop-width          : 1200px;
+$retina-width           : 1920px;

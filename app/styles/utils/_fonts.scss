@@ -4,7 +4,7 @@
 
 // Lato - 300, 400, 700; Italics
 @mixin lato($weight: 400, $isItalic: false){
-    font-family: 'Lato', sans-serif;
+    font-family: $primary-font;
     font-weight: $weight;
 
     @if $isItalic == 'true' {
@@ -14,6 +14,6 @@
 
 // Josefin - 300, 400, 600, 700
 @mixin josefin($weight: 400){
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: $secondary-font;
     font-weight: $weight;
 }

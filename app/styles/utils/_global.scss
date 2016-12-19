@@ -3,21 +3,27 @@
 }
 
 .page {
-  background: white;
-  width: $page-width;
-  min-height: $page-height;
-  display: block;
-  margin: 0 auto;
-  @include shadow();
+    background: white;
+    width: $page-width;
+    min-height: $page-height;
+    display: block;
+    margin: 0 auto;
+    @include shadow();
 }
 
 .resume {
+    border-top: 10px solid $primary-color;
     padding: 0 20px;
 }
 
+.keyline {
+    margin: 8px 0 10px;
+    border-top: 1px solid $primary-color;
+}
+
 @media print {
-  body, .page {
-    margin: 0;
-    box-shadow: 0;
-  }
+    body, .page {
+        margin: 0;
+        box-shadow: 0;
+    }
 }

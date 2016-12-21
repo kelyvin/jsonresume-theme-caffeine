@@ -13,7 +13,7 @@
 
 .resume {
     border-top: 10px solid $primary-color;
-    padding: 0 20px;
+    padding: 36px 22px 30px 34px;
 }
 
 .keyline {
@@ -21,8 +21,18 @@
     border-top: 1px solid $primary-color;
 }
 
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
 @media print {
     body, .page {
+        width: $print-width;
+        height: $print-height;
         margin: 0;
         box-shadow: 0;
     }

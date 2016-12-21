@@ -1,6 +1,13 @@
 {{#resume.basics}}
-<h1>{{name}}</h1>
-<h2>{{label}}</h2>
+<section class="header">
+    <div class="profile-header pull-left">
+        <h1>{{name}}</h1>
+        <h2>{{label}}</h2>
+    </div>
+    <div class="profile-pic pull-right">
+        <img src="{{picture}}" alt="profile-pic">
+    </div>
+</section>
 <section id="basics">
     <div class="contact">
     {{#if website}}

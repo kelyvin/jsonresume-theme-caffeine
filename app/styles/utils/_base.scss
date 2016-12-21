@@ -7,16 +7,19 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
+    margin: 0;
 }
 
 h1 {
     @include josefin(700);
     font-size: 40px;
+    letter-spacing: 1px;
 }
 
 h2 {
     @include josefin(300);
     font-size: 16px;
+    letter-spacing: .5px;
 }
 
 h3 {

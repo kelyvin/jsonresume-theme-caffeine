@@ -22,13 +22,15 @@ $link-color             : #2895F1;
 
 /*----- Fonts -----*/
 
-$primary-font           : 'Lato', Helvetica, Arial, sans-serif;
-$secondary-font         : 'Josefin Sans', Helvetica, Arial, sans-serif;
+$primary-font               : 'Lato', Helvetica, Arial, sans-serif;
+$secondary-font             : 'Josefin Sans', Helvetica, Arial, sans-serif;
 
 /*----- Dimensions and sizes -----*/
 
-$page-width             : 21cm;
-$page-height            : 29.7cm;
+$print-width            : 21cm;
+$print-height           : 29.7cm;
+$page-width             : 612px;
+$page-height            : 792px;
 
 $mobile-width           : 435px;
 $tablet-width           : 768px;

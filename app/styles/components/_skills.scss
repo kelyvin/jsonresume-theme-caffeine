@@ -1,0 +1,12 @@
+.skill {
+    margin-bottom: spacing(4);
+}
+
+.keywords {
+    list-style: none;
+    padding: 0;
+
+    .skill-item {
+        margin-bottom: 3px;
+    }
+}

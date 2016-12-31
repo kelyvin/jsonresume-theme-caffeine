@@ -1,0 +1,17 @@
+<section class="skill">
+    {{#if name}}
+        {{> title value=name}}
+    {{/if}}
+    {{#if level}}
+        <div class="level">
+            <em>{{level}}</em>
+        </div>
+    {{/if}}
+    {{#if keywords.length}}
+        <ul class="keywords">
+            {{#each keywords}}
+                <li class="skill-item"><h6>{{.}}</h6></li>
+            {{/each}}
+        </ul>
+    {{/if}}
+</section>

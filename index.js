@@ -11,6 +11,7 @@ function render(resume) {
     var resumeTemplate = fs.readFileSync(dir + '/views/resume.hbs', 'utf-8');
 
     Handlebars.partials(dir + '/views/partials/**/*.{hbs,js}');
+    Handlebars.partials(dir + '/views/components/**/*.{hbs,js}');
 
     return Handlebars.compile(resumeTemplate)({
         css: css,

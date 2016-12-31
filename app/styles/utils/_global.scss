@@ -1,22 +1,5 @@
-.item {
-    margin-bottom: 1em;
-}
-
-.page {
-    background: white;
-    width: $page-width;
-    min-height: $page-height;
-    display: block;
-    margin: 0 auto;
-    @include shadow();
-}
-
-.resume {
-    border-top: 10px solid $primary-color;
-    padding: 36px 22px 30px 34px;
-}
-
 .keyline {
+    width: spacing(9);
     margin: 8px 0 10px;
     border-top: 1px solid $primary-color;
 }

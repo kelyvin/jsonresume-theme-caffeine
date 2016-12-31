@@ -9,17 +9,25 @@
 	</style>
 	</head>
 	<body>
-		<div id="resume" class="resume page">
-			{{> basics }}
-			{{> work }}
-			{{> volunteer }}
-			{{> education }}
-			{{> awards }}
-			{{> publications }}
-			{{> skills }}
-			{{> languages }}
-			{{> interests }}
-			{{> references }}
-		</div>
+		<main id="resume" class="page">
+			{{> header}}
+			<div class="content">
+				<aside class="left-column">
+					{{> basics }}
+					{{> skills }}
+					{{> languages }}
+				</aside>
+				<div class="right-column">
+					{{> summary}}
+					{{> work }}
+					{{> volunteer }}
+					{{> education }}
+					{{> awards }}
+					{{> publications }}
+					{{> interests }}
+					{{> references }}
+				</div>
+			</div>
+		</main>
 	</body>
 </html>

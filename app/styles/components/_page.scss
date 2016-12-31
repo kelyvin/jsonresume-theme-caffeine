@@ -1,0 +1,25 @@
+.page {
+    background: white;
+    width: $page-width;
+    min-height: $page-height;
+    display: block;
+    margin: 0 auto;
+    border-top: 10px solid $primary-color;
+    padding: 36px 22px 30px 34px;
+    @include shadow();
+}
+
+.content {
+    margin-top: spacing(5);
+}
+
+.left-column {
+    float: left;
+    width: $aside-width;
+    margin-right: spacing(6);
+}
+
+.right-column {
+    width: auto;
+    overflow: hidden;
+}

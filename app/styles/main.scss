@@ -6,9 +6,12 @@
 @import 'utils/variables';
 @import 'utils/fonts';
 @import 'utils/mixins';
+@import 'utils/functions';
 @import 'utils/base';
 @import 'utils/global';
 
 /* Components */
+@import 'components/page';
+@import 'components/header';
 @import 'components/basics';
-@import 'components/profiles';
+@import 'components/skills';

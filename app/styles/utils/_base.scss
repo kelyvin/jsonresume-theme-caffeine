@@ -25,6 +25,7 @@ h2 {
 h3 {
     @include lato(300);
     font-size: 14px;
+    letter-spacing: .4px;
 
     &.bold {
         font-weight: 700;
@@ -44,6 +45,7 @@ h5 {
 h6 {
     @include lato();
     font-size: 10px;
+    letter-spacing: .3px;
 }
 
 p {

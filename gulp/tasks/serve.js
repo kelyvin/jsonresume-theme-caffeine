@@ -2,4 +2,6 @@
 
 var gulp = require('gulp');
 
-gulp.task('serve', ['resume', 'watch']);
+gulp.task('serve', ['watch'], function () {
+    gulp.start('resume');
+});

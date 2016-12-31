@@ -8,13 +8,9 @@ gulp.task('html', function() {
     var cssChannel = lazypipe()
         .pipe($.csso);
 
-    var assets = $.useref.assets({ searchPath: '{app, .}' }); // search app and ./bower_components for all referenced files
-
     return gulp.src(['app/**/*.hbs'])
-        .pipe(assets)
         .pipe($.if('*.js', $.uglify()))
         .pipe($.if('*.css', cssChannel()))
-        .pipe(assets.restore())
-        .pipe($.useref())
+        .pipe($.useref({ searchPath: '{app, .}' }))
         .pipe(gulp.dest('public'));
 });

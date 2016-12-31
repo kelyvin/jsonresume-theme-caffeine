@@ -29,11 +29,21 @@
     float: right;
 }
 
+@page {
+    size: A4;
+}
+
 @media print {
-    body, .page {
+    body {
+        margin: 0;
+    }
+
+    .page {
+        h1 {
+            font-size: 40px * 1.25;
+        }
         width: $print-width;
         height: $print-height;
-        margin: 0;
         box-shadow: 0;
     }
 }

@@ -4,14 +4,19 @@
 
 /* Utils */
 @import 'utils/variables';
-@import 'utils/fonts';
 @import 'utils/mixins';
 @import 'utils/functions';
-@import 'utils/base';
-@import 'utils/global';
+
+/* Base */
+@import 'base/fonts';
+@import 'base/base';
+@import 'base/global';
+
+/* Layouts */
+@import 'layouts/page';
+@import 'layouts/header';
+@import 'layouts/print';
 
 /* Components */
-@import 'components/page';
-@import 'components/header';
-@import 'components/basics';
-@import 'components/skills';
+@import 'components/title';
+@import 'components/work';

@@ -1,4 +1,18 @@
-.header {
+.keyline {
+    width: spacing(9);
+    margin: 8px 0 10px;
+    border-top: 1px solid $primary-color;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.clearfix {
     @include clearfix();
 }
 
@@ -12,4 +26,8 @@
         border-radius: 50%;
         border: 2px solid $primary-color;
     }
+}
+
+.resume-item {
+    padding-bottom: spacing(1);
 }

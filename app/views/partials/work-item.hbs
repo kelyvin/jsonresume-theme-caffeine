@@ -1,0 +1,19 @@
+<section class="work-item">
+    {{> section-header name=this.company }}
+
+    {{#if position}}
+    <h4>{{position}}</h4>
+    {{/if}}
+
+    {{#if summary}}
+    <p class="summary">{{summary}}</p>
+    {{/if}}
+
+    {{#if highlights.length}}
+    <ul>
+        {{#each highlights}}
+        <li>{{.}}</li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</section>

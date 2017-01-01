@@ -6,6 +6,10 @@
     box-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
+@mixin font-size($multiplier: 3) {
+    font-size: $font-unit * $multiplier;
+}
+
 @mixin clearfix {
     &:after {
         content: "";

@@ -7,8 +7,8 @@
     font-family: $primary-font;
     font-weight: $weight;
 
-    @if $isItalic == 'true' {
-        $font-style: italic;
+    @if $isItalic == true {
+        font-style: italic;
     }
 }
 

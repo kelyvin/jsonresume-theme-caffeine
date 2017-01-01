@@ -1,0 +1,20 @@
+@media print {
+    // TODO: Adjust font sie by 1.25?
+    body {
+        margin: 0;
+    }
+
+    .page {
+        width: $print-width;
+        height: $print-height;
+        box-shadow: 0;
+    }
+
+    .company {
+        a {
+            i {
+                display: none;
+            }
+        }
+    }
+}

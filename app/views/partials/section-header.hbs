@@ -12,12 +12,14 @@
     {{/if}}
     <h5 class="italic pull-right">
         {{#if startDate}}
-        <span class="startDate">{{startDate}}</span>
-        {{/if}}
-        {{#if endDate}}
-        <span class="endDate"> - {{endDate}}</span>
-        {{else}}
-        <span class="endDate"> - Present</span>
+            <span class="startDate">{{startDate}}</span>
+            {{#if endDate}}
+            <span class="endDate"> - {{endDate}}</span>
+            {{else}}
+            <span class="endDate"> - Present</span>
+            {{/if}}
+        {{else if releaseDate}}
+            {{releaseDate}}
         {{/if}}
     </h5>
 </div>

@@ -4,11 +4,7 @@
 
     {{#each resume.publications}}
     <section class="item">
-        {{#if releaseDate}}
-            {{> section-header name=this.name startDate=this.releaseDate}}
-        {{else}}
-            {{> section-header name=this.name}}
-        {{/if}}
+        {{> section-header name=this.name}}
 
         {{#if publisher}}
         <h5 class="awarder">{{publisher}}</h5>

@@ -1,10 +1,11 @@
 {{#if resume.education.length}}
-<div class="education-container">
+<div class="container education-container">
     {{> title value="Education"}}
 
     {{#each resume.education}}
-        <section class="education-item">
+        <section class="item">
             {{> section-header name=this.institution }}
+
             <h4>{{#if studyType}}{{studyType}} {{/if}}{{#if area}}{{area}}{{/if}}</h4>
 
             {{#if gpa}}
@@ -12,7 +13,7 @@
             {{/if}}
 
             {{#if courses.length}}
-            <ul class="minimal">
+            <ul>
                 {{#each courses}}
                 <li>{{.}}</li>
                 {{/each}}

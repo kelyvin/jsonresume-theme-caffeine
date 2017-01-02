@@ -35,7 +35,11 @@ h3 {
 
 h4 {
     @include lato(300);
-    @include font-size(3);;
+    @include font-size(3);
+
+    &.bold {
+        font-weight: 700;
+    }
 }
 
 h5 {
@@ -43,7 +47,7 @@ h5 {
     @include font-size(2.75);
 
     &.italic {
-        @include lato(300, true);
+        font-style: italic;
     }
 }
 
@@ -55,6 +59,13 @@ h6 {
 p,
 li {
     @include font-size(2.75);
+}
+
+blockquote {
+    @include font-size(2.75);
+    @include lato($isItalic: true);
+
+    margin: spacing(2) spacing(5);
 }
 
 em {

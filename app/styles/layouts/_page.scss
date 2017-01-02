@@ -10,17 +10,22 @@
     @include clearfix();
 }
 
-.content {
-    margin-top: spacing(1);
-}
-
 .left-column {
     float: left;
     width: $aside-width;
     margin-right: spacing(6);
+    word-wrap: break-word;
 }
 
 .right-column {
     width: auto;
     overflow: hidden;
+}
+
+.item {
+    margin-bottom: spacing(3);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }

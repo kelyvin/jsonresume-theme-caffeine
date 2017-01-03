@@ -57,6 +57,20 @@ h6 {
     @include font-size(2.5);
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover {
+        color: $link-color;
+    }
+
+    .fa-external-link {
+        font-size: 10px;
+        vertical-align: text-top;
+    }
+}
+
 p,
 li {
     @include font-size(2.75);

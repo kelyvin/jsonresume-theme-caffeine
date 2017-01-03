@@ -46,7 +46,9 @@
     "wiredep": "^4.0.0"
   },
   "dependencies": {
+    "address-format": "0.0.3",
     "handlebars": "^4.0.5",
-    "handlebars-wax": "^4.0.0"
+    "handlebars-wax": "^4.0.0",
+    "swag": "^0.7.0"
   }
 }

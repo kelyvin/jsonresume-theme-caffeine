@@ -1,84 +1,29 @@
 {{#resume.basics}}
 <div class="container about-container">
     {{> title value="About"}}
-    <div class="contact">
-    {{#if website}}
-    <div class="website">
-        <strong>Website</strong>
-        {{website}}
-    </div>
+
+    {{#if location}}
+        {{#location}}
+        {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+        {{/location}}
     {{/if}}
+
     {{#if email}}
-    <div class="email">
-        <strong>Email</strong>
-        {{email}}
-    </div>
+        {{> info-tag text=this.email icon="fa-envelope-o"}}
     {{/if}}
+
     {{#if phone}}
-    <div class="phone">
-        <strong>Phone</strong>
-        {{phone}}
-    </div>
+        {{> info-tag text=this.phone icon="fa-mobile"}}
     {{/if}}
-    </div>
-    {{#location}}
-    <h3>Location</h3>
-    <section id="location">
-        {{#if address}}
-        <div class="address">
-            <strong>Address</strong>
-            {{address}}
-        </div>
-        {{/if}}
-        {{#if postalCode}}
-        <div class="postalCode">
-            <strong>Postal code</strong>
-            {{postalCode}}
-        </div>
-        {{/if}}
-        {{#if city}}
-        <div class="city">
-            <strong>City</strong>
-            {{city}}
-        </div>
-        {{/if}}
-        {{#if countryCode}}
-        <div class="countryCode">
-            <strong>Country code</strong>
-            {{countryCode}}
-        </div>
-        {{/if}}
-        {{#if region}}
-        <div class="region">
-            <strong>Region</strong>
-            {{region}}
-        </div>
-        {{/if}}
-    </section>
-    {{/location}}
-    {{#if profiles.length}}
-    <h3>Profiles</h3>
-    <section id="profiles">
+
+    {{#if website}}
+        {{> info-tag text=this.website icon="fa-desktop" url=this.website}}
+    {{/if}}
+
+    {{#if profiles}}
         {{#each profiles}}
-        <div class="item">
-            {{#if network}}
-            <strong class="network">
-                {{network}}
-            </strong>
-            {{/if}}
-            {{#if username}}
-            <div class="username">
-                {{username}}
-            </div>
-            {{/if}}
-            {{#if url}}
-            <div class="url">
-                <a href="{{url}}">Link</a>
-            </div>
-            {{/if}}
-        </div>
+            {{> social}}
         {{/each}}
-    </section>
     {{/if}}
 </section>
 {{/resume.basics}}

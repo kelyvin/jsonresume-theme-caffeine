@@ -1,0 +1,39 @@
+.info-tag-container {
+    margin-bottom: spacing(1);
+
+    .fa {
+        @include font-size(3.5);
+        width: 12px;
+        margin-right: spacing(1);
+        text-align: center;
+        vertical-align: middle;
+
+        &.fa-map-marker {
+            @include font-size(4);
+        }
+
+        &.fa-mobile {
+            @include font-size(4.5);
+        }
+
+        &.fa-envelope-o {
+            @include font-size(3);
+        }
+
+        &.fa-desktop {
+            @include font-size(2.75);
+        }
+
+        &.fa-external-link {
+            font-size: inherit;
+            vertical-align: text-top;
+        }
+    }
+
+    .info-text {
+        @include font-size(2.25);
+        display: inline-block;
+        vertical-align: middle;
+        width: 120px;
+    }
+}

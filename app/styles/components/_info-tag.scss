@@ -25,6 +25,7 @@
         }
 
         &.fa-external-link {
+            width: auto;
             font-size: inherit;
             vertical-align: text-top;
         }
@@ -34,6 +35,6 @@
         @include font-size(2.25);
         display: inline-block;
         vertical-align: middle;
-        width: 120px;
+        width: 138px;
     }
 }

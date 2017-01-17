@@ -13,7 +13,7 @@
 .left-column {
     float: left;
     width: $aside-width;
-    margin-right: spacing(2);
+    margin-right: $aside-margin;
     word-wrap: break-word;
 }
 

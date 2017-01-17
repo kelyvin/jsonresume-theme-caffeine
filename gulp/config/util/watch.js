@@ -28,6 +28,5 @@ gulp.task('watch', function() {
         gulp.watch('app/views/**/*.hbs', ['html']);
         gulp.watch('app/images/**/*', ['images']);
         gulp.watch('app/styles/**/*.scss', ['styles']);
-        gulp.watch('bower.json', ['wiredep']);
     }, 2500);
 });

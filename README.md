@@ -1,4 +1,4 @@
-# jsonresume-theme-caffeine ![](https://travis-ci.org/kelyvin/jsonresume-theme-caffeine.svg?branch=master)
+# jsonresume-theme-caffeine ![](https://travis-ci.org/kelyvin/jsonresume-theme-caffeine.svg?branch=master) [![npm version](https://badge.fury.io/js/jsonresume-theme-caffeine.svg)](https://www.npmjs.com/package/jsonresume-theme-caffeine)
 
 This is the Caffeine theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
 
@@ -36,7 +36,7 @@ When building the project for the very first time, run the following command.
 ```bash
 npm install
 ```
-This will install all of your node modules as well as your bower components (I have already set up a post-install scrpt to do this for you).
+This will install all of your node modules.
 
 ## Running
 To run the project, simply run the following command

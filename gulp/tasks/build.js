@@ -5,7 +5,7 @@ const
     fs = require('fs'),
     $ = require('gulp-load-plugins')();
 
-gulp.task('build', ['styles', 'fonts', 'html', 'images', 'extras', 'wiredep'], function () {
+gulp.task('build', ['styles', 'html', 'images', 'extras'], function () {
     if (!fs.existsSync('resume.json')) {
         fs.createReadStream('resume-sample.json').pipe(fs.createWriteStream('resume.json'));
     }

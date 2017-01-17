@@ -34,11 +34,9 @@ bower_components
 .tmp
 
 # Files/Folders used for theme development
-.bowerrc
 .editorconfig
 .jshintrc
 .travis.yml
-bower.json
 gulpfile.js
 gulp
 app

@@ -1,8 +1,9 @@
 'use strict';
 
-var gulp = require('gulp');
-var cssImport = require('gulp-cssimport');
-var $ = require('gulp-load-plugins')();
+const
+    gulp = require('gulp'),
+    cssImport = require('gulp-cssimport'),
+    $ = require('gulp-load-plugins')();
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/*.scss')

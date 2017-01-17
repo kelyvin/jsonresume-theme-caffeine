@@ -5,6 +5,7 @@ const
     handlebars = require('handlebars'),
     handlebarsWax = require('handlebars-wax'),
     addressFormat = require('address-format'),
+    moment = require('moment'),
     Swag = require('swag');
 
 Swag.registerHelpers(handlebars);
@@ -37,6 +38,10 @@ handlebars.registerHelper({
 
 
         return addressList.join('<br/>');
+    },
+
+    formatDate: function(date) {
+        return moment(date).format('MM/YYYY');
     }
 });
 

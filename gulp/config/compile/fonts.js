@@ -1,7 +1,8 @@
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+const
+    gulp = require('gulp'),
+    $ = require('gulp-load-plugins')();
 
 gulp.task('fonts', function () {
     return gulp.src(require('main-bower-files')()

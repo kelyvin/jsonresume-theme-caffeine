@@ -1,9 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+const
+    gulp = require('gulp'),
+    fs = require('fs'),
+    $ = require('gulp-load-plugins')();
 
-//temporarily disabling jshint
 gulp.task('build', ['styles', 'fonts', 'html', 'images', 'extras', 'wiredep'], function () {
-  return gulp.src('public/**/*').pipe($.size({title: 'build', gzip: true}));
+    if (!fs.existsSync('resume.json')) {
+        fs.createReadStream('resume-sample.json').pipe(fs.createWriteStream('resume.json'));
+    }
+
+    return gulp.src('public/**/*').pipe($.size({title: 'build', gzip: true}));
 });

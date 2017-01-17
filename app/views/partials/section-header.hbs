@@ -12,9 +12,9 @@
     {{/if}}
     <h5 class="italic pull-right">
         {{#if startDate}}
-            <span class="startDate">{{startDate}}</span>
+            <span class="startDate">{{formatDate startDate}}</span>
             {{#if endDate}}
-            <span class="endDate"> - {{endDate}}</span>
+            <span class="endDate"> - {{formatDate endDate}}</span>
             {{else}}
             <span class="endDate"> - Present</span>
             {{/if}}

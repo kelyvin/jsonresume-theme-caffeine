@@ -1,12 +1,12 @@
 'use strict';
 
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+const
+    gulp = require('gulp'),
+    $ = require('gulp-load-plugins')();
 
 gulp.task('html', function() {
-    var lazypipe = require('lazypipe');
-    var cssChannel = lazypipe()
-        .pipe($.csso);
+    let lazypipe = require('lazypipe'),
+        cssChannel = lazypipe().pipe($.csso);
 
     return gulp.src(['app/**/*.hbs'])
         .pipe($.if('*.js', $.uglify()))

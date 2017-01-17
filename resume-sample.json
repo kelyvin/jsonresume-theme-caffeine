@@ -2,28 +2,33 @@
   "basics": {
     "name": "Richard Hendriks",
     "label": "Programmer",
-    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/6/005/06b/0bc/36a0ba7.jpg",
-    "email": "richard.hendriks @mail.com",
+    "picture": "http://www.piedpiper.com/app/themes/pied-piper/dist/images/richard.png",
+    "email": "richard.hendriks @piedpiper.com",
     "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
+    "website": "http://piedpiper.com",
     "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "94115",
-      "city": "San Francisco",
+      "address": "Newell Road",
+      "postalCode": "94303",
+      "city": "Palo Alto",
       "countryCode": "US",
       "region": "CA"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "username": "siliconHBO",
+        "url": "https://twitter.com/siliconHBO"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "Facebook",
+        "username": "SiliconHBO",
+        "url": "https://www.facebook.com/SiliconHBO"
+      },
+      {
+        "network": "Instagram",
+        "username": "siliconhbo",
+        "url": "https://www.instagram.com/siliconhbo/"
       }
     ]
   },
@@ -32,14 +37,21 @@
       "company": "Pied Piper",
       "position": "CEO/President",
       "website": "http://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
+      "startDate": "2014-04-13",
       "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
       "highlights": [
         "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
         "Successfully won Techcrunch Disrupt",
         "Optimized an algorithm that holds the current world record for Weisman Scores"
       ]
+    },
+    {
+      "company": "Hooli",
+      "position": "Software Engineer",
+      "website": "http://www.hooli.xyz/",
+      "startDate": "2013-01-01",
+      "endDate": "2014-04-06",
+      "summary": "Worked on optimizing the backend algorithms for Hooli"
     }
   ],
   "volunteer": [
@@ -57,12 +69,12 @@
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
+      "institution": "Stanford",
+      "area": "Computer Science",
+      "studyType": "B.S",
       "startDate": "2011-06-01",
       "endDate": "2014-01-01",
-      "gpa": "4.0",
+      "gpa": "GPA 4.0",
       "courses": [
         "DB1101 - Basic SQL",
         "CS2011 - Java Introduction"
@@ -124,7 +136,7 @@
   "references": [
     {
       "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "reference": "It is my pleasure to recommend Richard. That is all."
     }
   ]
 }

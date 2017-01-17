@@ -2,6 +2,8 @@
 
 This is the Caffeine theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
 
+![Richard Hendriks Reume](http://i.imgur.com/2t7SmHFh.png)
+
 ## Installation
 Before you can get started with this environment, it is critical that you have the [resume-cli](https://github.com/jsonresume/resume-cli) installed. Then, make sure you have [node, npm](https://nodejs.org/en/), [bower](http://bower.io/), and [gulp](http://gulpjs.com/) installed.
 
@@ -28,7 +30,7 @@ To run the project, simply run the following command
 npm start
 ```
 
-Running the command above will automatically build your project, load your resume with the theme, listen for changes, and automatically refresh the browser on file changes.
+Running the command above will automatically build your project, load your resume with the theme, listen for changes, and automatically refresh the browser on file changes. A `resume.json` will be created for you by default against the `resume-sample.json` if you do not provide a `resume.json` at the root directory level.
 
 ## Developer Environment
 The most important pieces of this environment are the two `app` and `gulp` folders as well as `index.js`. If you've already read through the [jsonresume-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate), you should know what the files within `/app` and `index.js` represents.
@@ -43,7 +45,7 @@ The gulp folder holds all the modularized gulp tasks/configs. Anything gulp rela
 This is the file that will return the HTML to the theme server and run against the resume-cli. Not much change here from the jsonresume-theme-boilerplate except that it has been modified to accomodate this file system.
 
 ## Creating your resume.json
-This project comes with `resume-sample.json`, which is a sample json resume you can build from. This will automatically be served by the app if you don't create a `resume.json` file.
+This project comes with `resume-sample.json`, which is a sample json resume you can build from. If you don't create a `resume.json` file, it will automatically be created against the `resume-sample.json` file.
 
 It is highly **recommended** to create your own `resume.json` for your own resume. If you create a `resume.json`, this will automatically be used by the app instead. In addition, this file is automatically ignored from GIT to ensure you cannot check it in (since most likely you'll have very personal information on there). If you do decide that you want to check it in, you can simply comment the following line in `.gitignore` like so:
 
@@ -55,7 +57,7 @@ It is highly **recommended** to create your own `resume.json` for your own resum
 Please review the [schema here](https://jsonresume.org/schema/) when creating your `resume.json`.
 
 ## Building the project
-When you run `npm start` or choose to manually build the project using `gulp`, it will generate a `/public` folder. This folder will be created after running the appropraite gulp tasks against the `/app` folder. Essentially, the app folder is your development environment and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run agianst this folder.
+When you run `npm start` or choose to manually build the project using `gulp`, it will generate a `/public` folder. This folder will be created after running the appropritae gulp tasks against the `/app` folder. Essentially, the app folder is your development environment and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run agianst this folder.
 
 ## Ignoring changes in resume.json
 If you want to modify the theme but don't necessarily want to propogate the changes made in resume.json, you can easily untrack that file by running the following command:

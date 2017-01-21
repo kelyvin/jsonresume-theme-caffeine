@@ -32,6 +32,11 @@ This theme environment comes equipped with the following features to make your d
 - Integration with [resume-cli](https://github.com/jsonresume/resume-cli) so you can still run the same commands against this project.
 
 ## Getting Started
+If you don't have some global packages installed yet, you can run the command below:
+```bash
+npm install -g resume-cli gulp-cli bower
+```
+
 When building the project for the very first time, run the following command.
 ```bash
 npm install

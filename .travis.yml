@@ -9,6 +9,8 @@ before_install:
   - npm install -g resume-cli
 install:
   - npm install
+before_script:
+  - npm link
 script:
   - gulp
   - resume test

@@ -12,3 +12,5 @@ install:
 script:
   - gulp
   - resume test
+  - resume export caffeine-resume.pdf --format pdf --theme caffeine
+  - rm caffeine-resume.pdf

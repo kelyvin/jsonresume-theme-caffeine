@@ -5,9 +5,26 @@
     }
 
     .page {
-        width: $print-width;
-        height: $print-height;
-        box-shadow: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 36px 0 30px;
+        box-shadow: none;
+
+        .resume-header,
+        .resume-content {
+            padding: 0 22px 0 34px;
+        }
+    }
+
+    .container {
+        page-break-inside: avoid;
+    }
+
+    .work-container {
+        .item {
+            page-break-inside: avoid;
+        }
     }
 
     .fa-external-link {

@@ -2,7 +2,7 @@
 
 This is the Caffeine theme repository for the [Json Resume](https://jsonresume.org/) project. Unlike the [json-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) project, this environment has a much improved developer environment to make editing your theme super easy to do.
 
-![Richard Hendriks Reume](http://i.imgur.com/2t7SmHF.png =250x)
+![Richard Hendriks Reume](http://i.imgur.com/yktvc8m.png)
 
 ## Table of Contents
 

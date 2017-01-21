@@ -104,6 +104,17 @@ ul {
             padding-left: 0;
         }
     }
+
+    &.two-column {
+        -webkit-column-count: 2;
+        -webkit-column-gap: spacing(5.6);
+        column-count: 2;
+        column-gap: spacing(5.6);
+
+        li {
+            padding-left: 0;
+        }
+    }
 }
 
 @page {

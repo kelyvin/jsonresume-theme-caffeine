@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-caffeine",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "dependencies": {
     "address-format": {
       "version": "0.0.3",

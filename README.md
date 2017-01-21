@@ -17,6 +17,7 @@ This is the Caffeine theme repository for the [Json Resume](https://jsonresume.o
 * [Developer Environment](#developer-environment)
 * [Creating your resume.json](#creating-your-resumejson)
 * [Building the project](#building-the-project)
+* [Exporting your resume](#exporting-your-resume)
 
 ## Installation
 Before you can get started with this environment, it is critical that you have the [resume-cli](https://github.com/jsonresume/resume-cli) installed. Then, make sure you have [node, npm](https://nodejs.org/en/), [bower](http://bower.io/), and [gulp](http://gulpjs.com/) installed.
@@ -131,3 +132,16 @@ git update-index --no-assume-unchanged resume.json
 
 ## Building the project
 When you run `npm start` or choose to manually build the project using `gulp`, it will generate a `/public` folder. This folder will be created after running the appropritae gulp tasks against the `/app` folder. Essentially, the app folder is your development environment and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run agianst this folder.
+
+## Exporting your resume
+To export your resume, you can run the following command below:
+
+```
+gulp export
+```
+
+This will automatically set up an npm link with this package to your globally installed npm dependencies and enable you to run the `resume export` command from `resume-cli`. This will automatically create a `resume.pdf` file within your current directory. You can also specify the format by adding a format argument to the command as well.
+
+```
+gulp export --format html
+```

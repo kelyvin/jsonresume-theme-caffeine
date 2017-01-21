@@ -47,7 +47,8 @@
     "lazypipe": "^1.0.1",
     "opn": "^4.0.2",
     "require-dir": "^0.3.1",
-    "serve-index": "^1.8.0"
+    "serve-index": "^1.8.0",
+    "yargs": "^6.6.0"
   },
   "dependencies": {
     "address-format": "0.0.3",

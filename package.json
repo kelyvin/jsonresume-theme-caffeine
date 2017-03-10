@@ -21,6 +21,7 @@
     "start": "gulp && gulp serve"
   },
   "devDependencies": {
+    "body-parser": "^1.17.1",
     "browser-sync": "^2.18.5",
     "del": "^2.2.2",
     "express": "^4.14.1",

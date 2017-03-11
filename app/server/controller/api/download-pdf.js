@@ -30,7 +30,13 @@ function sendPdf(req,res){
       console.log(err);
       res.status(500).send({err:err});
     }else{
-      console.log('pdf sent')
+      console.log('pdf sent');
+      //delete temp pdf file
+      fs.unlink(rootPath + '/resume.pdf',function(err){
+        if(err){
+          console.log(err);
+        }
+      })
     }
   });
 }

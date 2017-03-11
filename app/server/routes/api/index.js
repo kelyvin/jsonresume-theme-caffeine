@@ -1,9 +1,9 @@
 'use strict';
 const
     express = require('express'),
-    api = require(process.cwd()+'/app/server/controller/api');
+    api = require(process.cwd()+'/app/server/controller/api/download-pdf');
 let server = express();
 
-server.get('/downloadPdf', api.toPdf);
+server.get('/download-pdf', api.toPdf);
 
 module.exports = server;

@@ -4,10 +4,10 @@ const path = require('path'),
 
 function init(server){
   server.get('/', function (req, res) {
-    res.render(path.join(process.cwd(),'/public/index.html'));
+    res.render(path.join(process.cwd(),'/public/main.html'));
   });
 
-  server.use('/api',api)
+  server.use('/api',api);
 }
 
 

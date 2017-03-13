@@ -3,10 +3,28 @@ const exec = require('child_process').exec,
       fs = require('fs'),
       rootPath = process.cwd();
 
-function toPdf(req,res){
-  console.log("starting html --> pdf")
+function sendPdf(req,res){
+  res.download(rootPath + '/resume.pdf','resume.pdf',function(err){
+    if(err){
+      console.log(err);
+      res.status(500).send({err:err});
+    }else{
+      console.log('pdf sent');
+      //delete temp pdf file
+      fs.unlink(rootPath + '/resume.pdf',function(err){
+        if(err){
+          console.log(err);
+        }
+      });
+    }
+  });
+}
+
+function downloadPdf(req,res){
+  console.log('starting html --> pdf');
   const command = 'gulp export';
-  fs.stat(rootPath + '/resume.pdf',function(err,stats){
+
+  fs.stat(rootPath + '/resume.pdf',function(err){
     if(err){
       exec(command, function(err, stdout, stderr) {
           console.log(stdout);
@@ -21,26 +39,10 @@ function toPdf(req,res){
     }else{
       sendPdf(req,res);
     }
-  })
-}
-
-function sendPdf(req,res){
-  res.download(rootPath + '/resume.pdf','resume.pdf',function(err){
-    if(err){
-      console.log(err);
-      res.status(500).send({err:err});
-    }else{
-      console.log('pdf sent');
-      //delete temp pdf file
-      fs.unlink(rootPath + '/resume.pdf',function(err){
-        if(err){
-          console.log(err);
-        }
-      })
-    }
   });
 }
 
+
 module.exports = {
-  toPdf: toPdf
+  downloadPdf: downloadPdf
 };

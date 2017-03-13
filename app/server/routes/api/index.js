@@ -4,6 +4,6 @@ const
     api = require(process.cwd()+'/app/server/controller/api/download-pdf');
 let server = express();
 
-server.get('/download-pdf', api.toPdf);
+server.get('/download-pdf', api.downloadPdf);
 
 module.exports = server;

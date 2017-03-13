@@ -6,7 +6,6 @@ let server = express(),
     routes = require('./routes');
 
 
-
 // set up middleware that parses json
 server.use(bodyParser.json());
 

@@ -8,6 +8,7 @@ const
     moment = require('moment'),
     Swag = require('swag');
 
+
 Swag.registerHelpers(handlebars);
 
 handlebars.registerHelper({
@@ -46,20 +47,22 @@ handlebars.registerHelper({
 });
 
 
-function render(resume) {
-    let dir = __dirname + '/public',
-        css = fs.readFileSync(dir + '/styles/main.css', 'utf-8'),
-        resumeTemplate = fs.readFileSync(dir + '/views/resume.hbs', 'utf-8');
+function render(resume,readPath) {
+  let dir = __dirname + '/public',
+      css = fs.readFileSync(dir + '/styles/main.css', 'utf-8'),
+      filePath = (readPath) ? readPath : dir + '/views/resume.hbs',
+      resumeTemplate = fs.readFileSync(filePath, 'utf-8');
 
-    let Handlebars = handlebarsWax(handlebars);
+  let Handlebars = handlebarsWax(handlebars);
 
-    Handlebars.partials(dir + '/views/partials/**/*.{hbs,js}');
-    Handlebars.partials(dir + '/views/components/**/*.{hbs,js}');
 
-    return Handlebars.compile(resumeTemplate)({
-        css: css,
-        resume: resume
-    });
+  Handlebars.partials(dir + '/views/partials/**/*.{hbs,js}');
+  Handlebars.partials(dir + '/views/components/**/*.{hbs,js}');
+
+  return Handlebars.compile(resumeTemplate)({
+      css: css,
+      resume: resume
+  });
 }
 
 module.exports = {

@@ -8,7 +8,6 @@ const
 
 //pull json data from resume.json and render an resume version of
 gulp.task('resume', function () {
-  console.log(rootPath);
   const readPath = rootPath + '/app/views/main.hbs',
         writePath = rootPath + '/public/main.html';
 

@@ -54,7 +54,7 @@ function render(resume,readPath) {
       resumeTemplate = fs.readFileSync(filePath, 'utf-8');
 
   let Handlebars = handlebarsWax(handlebars);
-  
+
 
   Handlebars.partials(dir + '/views/partials/**/*.{hbs,js}');
   Handlebars.partials(dir + '/views/components/**/*.{hbs,js}');

@@ -1,14 +1,15 @@
 'use strict';
+
+const rootPath = process.cwd();
+
 const
     gulp = require('gulp'),
-    exec = require('child_process').exec;
+    createResume = require(rootPath + '/app/lib').createResume;
 
-gulp.task('resume', function (cb) {
-    let command = 'resume serve --silent';
+//pull json data from resume.json and render an resume version of
+gulp.task('resume', function () {
+  const readPath = rootPath + '/app/views/main.hbs',
+        writePath = rootPath + '/public/main.html';
 
-    exec(command, function(err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-    });
+  createResume(readPath,writePath);
 });

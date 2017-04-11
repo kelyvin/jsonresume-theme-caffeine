@@ -1,15 +1,12 @@
 'use strict';
-
-const rootPath = process.cwd();
-
 const
     gulp = require('gulp'),
-    createResume = require(rootPath + '/app/lib').createResume;
+    lib = require('../../lib');
 
 //pull json data from resume.json and render an resume version of
 gulp.task('resume', function () {
-  const readPath = rootPath + '/app/views/main.hbs',
-        writePath = rootPath + '/public/main.html';
+  const readPath = './app/views/main.hbs',
+        writePath = './public/main.html';
 
-  createResume(readPath,writePath);
+  lib.createResume(readPath,writePath);
 });

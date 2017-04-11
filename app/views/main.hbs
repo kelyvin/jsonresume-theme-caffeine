@@ -1,21 +1,21 @@
 <!doctype html>
 <!-- this file is for rendering to browser -->
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<script
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-	<style>
-		{{{css}}}
-	</style>
-	</head>
-	<body>
-		{{> resume-template }}
-		{{> pdf-button }}
-	</body>
+    <style>
+        {{{css}}}
+    </style>
+    </head>
+    <body>
+        {{> pdf-button }}
+        {{> resume-template }}
+    </body>
 </html>

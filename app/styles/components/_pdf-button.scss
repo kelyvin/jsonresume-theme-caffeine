@@ -1,8 +1,19 @@
 
 #pdf-button-container{
-  text-align:center;
-  .pdf-button{
-    color: $gray-light;
-    background-color: $primary-color;
-  }
+    text-align:center;
+    .pdf-button{
+        border:0;
+        height:$button-large-height;
+        margin:$aside-margin;
+        padding:5px;
+        color: white;
+        background-color: $gray-darker;
+    }
+    .pdf-button:hover{
+        cursor:pointer;
+    }
+    h2{
+        font-family:$primary-font;
+        font-weight:400;
+    }
 }

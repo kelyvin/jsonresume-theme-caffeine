@@ -5,8 +5,11 @@ const
 
 //pull json data from resume.json and render an resume version of
 gulp.task('resume', function () {
-  const readPath = './app/views/main.hbs',
-        writePath = './public/main.html';
+  const readPathMain = './app/views/main.hbs',
+        writePathMain = './public/main.html',
+        readPathResume = './app/views/resume.hbs',
+        writePathResume = './public/resume.html';
 
-  lib.createResume(readPath,writePath);
+  lib.createResume(readPathMain,writePathMain);
+  lib.createResume(readPathResume,writePathResume);
 });

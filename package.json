@@ -46,6 +46,7 @@
     "gulp-useref": "^3.1.2",
     "gulp-wrap": "^0.13.0",
     "hbs": "^4.0.1",
+    "jshint": "https://registry.npmjs.org/jshint/-/jshint-2.9.4.tgz",
     "jshint-stylish": "^2.2.1",
     "lazypipe": "^1.0.1",
     "opn": "^4.0.2",
@@ -55,8 +56,10 @@
   },
   "dependencies": {
     "address-format": "0.0.3",
+    "express": "^4.15.2",
     "handlebars": "^4.0.5",
     "handlebars-wax": "^4.0.0",
+    "html-pdf": "^2.1.0",
     "moment": "^2.17.1",
     "swag": "^0.7.0"
   }

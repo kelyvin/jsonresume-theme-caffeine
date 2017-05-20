@@ -4,7 +4,7 @@ const path = require('path'),
 
 function init(server){
   server.get('/', function (req, res) {
-    res.render(path.join(process.cwd(),'/public/main.html'));
+    res.render(path.join(process.cwd(),'/public/resume.html'));
   });
 
   server.use('/api',api);

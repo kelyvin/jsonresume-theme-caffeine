@@ -2,7 +2,7 @@
 const exec = require('child_process').exec,
       fs = require('fs'),
       pdf = require('html-pdf'),
-      lib = require('../../../lib');
+      exporter = require('../../../lib/exporter');
 
 function sendPdf(req,res){
   res.download('./resume.pdf','resume.pdf',function(err){
@@ -23,7 +23,7 @@ function sendPdf(req,res){
 
 function downloadPdf(req,res){
   //create pdf version of html
-    lib.createPdf(function(err){
+    exporter.createPdf(function(err){
         if(err){
             console.log(err);
             res.status(500).send({err:err});

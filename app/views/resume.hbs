@@ -1,15 +1,35 @@
 <!doctype html>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<style>
-		{{{css}}}
-	</style>
-	</head>
-	<body>
-		{{> resume-template }}
-	</body>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+    <title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        {{{css}}}
+    </style>
+    </head>
+    <body>
+        <div>{{> pdf-button }}</div>
+        <div id="resume" class="page">
+            {{> resume-header }}
+            <div class="resume-content">
+                <aside class="left-column">
+                    {{> about }}
+                    {{> skills }}
+                    {{> languages }}
+                    {{> interests }}
+                </aside>
+                <div class="right-column">
+                    {{> summary}}
+                    {{> work }}
+                    {{> volunteer }}
+                    {{> education }}
+                    {{> awards }}
+                    {{> publications }}
+                    {{> references }}
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

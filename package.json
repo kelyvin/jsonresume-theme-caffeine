@@ -21,7 +21,6 @@
     "start": "gulp && gulp serve"
   },
   "devDependencies": {
-    "body-parser": "^1.17.1",
     "browser-sync": "^2.18.5",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
@@ -55,6 +54,7 @@
     "yargs": "^6.6.0"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
     "address-format": "0.0.3",
     "express": "^4.15.2",
     "handlebars": "^4.0.5",

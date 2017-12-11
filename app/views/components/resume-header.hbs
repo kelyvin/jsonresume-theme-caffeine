@@ -5,7 +5,9 @@
         <h2>{{label}}</h2>
     </div>
     <div class="profile-pic pull-right">
+        {{#if picture}}
         <img src="{{picture}}" alt="profile-pic">
+        {{/if}}
     </div>
 </header>
 {{/resume.basics}}

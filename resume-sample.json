@@ -72,6 +72,8 @@
       "institution": "Stanford",
       "area": "Computer Science",
       "studyType": "B.S",
+      "location": "Palo Alto, CA",
+      "specialization": "Machine Learning",
       "startDate": "2011-06-01",
       "endDate": "2014-01-01",
       "gpa": "GPA 4.0",

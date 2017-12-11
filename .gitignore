@@ -36,6 +36,7 @@ bower_components
 # Public folder from build
 public
 
-# Keep your personal resume.json private
+# Keep your personal resume.json private and any generated pdf's
 resume.json
 resume_*.json
+resume.pdf

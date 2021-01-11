@@ -1,37 +1,37 @@
 .container {
-    padding-top: spacing(4);
+  padding-top: spacing(4);
 }
 
 .keyline {
-    width: spacing(9);
-    margin: 8px 0 10px;
-    border-top: 1px solid $primary-color;
+  width: spacing(9);
+  margin: 8px 0 10px;
+  border-top: 1px solid $primary-color;
 }
 
 .pull-left {
-    float: left;
+  float: left;
 }
 
 .pull-right {
-    float: right;
+  float: right;
 }
 
 .clearfix {
-    @include clearfix();
+  @include clearfix();
 }
 
 .profile-pic {
-    margin-top: -5px;
-    margin-right: 18px;
+  margin-top: -5px;
+  margin-right: 18px;
 
-    img {
-        height: $profile-pic-size;
-        width: $profile-pic-size;
-        border-radius: 50%;
-        border: 2px solid $primary-color;
-    }
+  img {
+    height: $profile-pic-size;
+    width: $profile-pic-size;
+    border-radius: 50%;
+    border: 2px solid $primary-color;
+  }
 }
 
 .summary {
-    margin: spacing(1) 0 spacing(1);
+  margin: spacing(1) 0 spacing(1);
 }

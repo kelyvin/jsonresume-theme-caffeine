@@ -1,19 +1,19 @@
 @import './mixins/media-queries';
 
 @mixin shadow {
-    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.5);
-    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 @mixin font-size($multiplier: 3) {
-    font-size: $font-unit * $multiplier;
+  font-size: $font-unit * $multiplier;
 }
 
 @mixin clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

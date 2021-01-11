@@ -85,13 +85,13 @@ git update-index --no-assume-unchanged resume.json
 When you run `npm start` or choose to manually build the project using `gulp`, it will generate a `/public` folder. This folder will be created after running the appropritae gulp tasks against the `/app` folder. Essentially, the app folder is your development environment and the public folder will be what we deploy to production. The public folder is exactly the same as the public folder generated from the jsonresume-theme-boilerplate, thus, our `index.js` will still run agianst this folder.
 
 ## Exporting your resume
-To export your resume, you can run the following command below:
+To export your resume, you can run the following command below. This will automatically create a `resume.pdf` file within your current directory:
 
 ```
 npm run export
 ```
 
-This will automatically set up an npm link with this package to your globally installed npm dependencies and enable you to run the `resume export` command from `resume-cli`. This will automatically create a `resume.pdf` file within your current directory.
+Alternatively, you can also do a **print page** on the browser and save it as as PDF (by setting margins to none and removing header/footers.)
 
 ## Theme Overrides
 The theme provides will automatically render certain styles and icons depending on what you specify in the `resume.json` or what you choose to adjust within `variable.scss`. Some examples are listed below.

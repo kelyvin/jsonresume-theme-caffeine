@@ -1,8 +1,6 @@
-'use strict';
-
 const
-    gulp = require('gulp'),
-    $ = require('gulp-load-plugins')();
+  gulp = require('gulp'),
+  $ = require('gulp-load-plugins')();
 
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')

@@ -1,20 +1,20 @@
 {{#if resume.publications.length}}
 <div class="container publications-container">
-    {{> title value="Publications"}}
+  {{> title value="Publications"}}
 
-    {{#each resume.publications}}
-    <section class="item">
-        {{> section-header name=this.name}}
+  {{#each resume.publications}}
+  <section class="item">
+    {{> section-header name=this.name}}
 
-        {{#if publisher}}
-        <h5 class="awarder">{{publisher}}</h5>
-        {{/if}}
+    {{#if publisher}}
+      <h5 class="awarder">{{publisher}}</h5>
+    {{/if}}
 
-        {{#if summary}}
-        <p class="summary">{{summary}}</p>
-        {{/if}}
+    {{#if summary}}
+      <p class="summary">{{summary}}</p>
+    {{/if}}
 
-    </section>
-    {{/each}}
+  </section>
+  {{/each}}
 </div>
 {{/if}}

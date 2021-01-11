@@ -1,25 +1,28 @@
 {{#if resume.education.length}}
 <div class="container education-container">
-    {{> title value="Education"}} {{#each resume.education}}
-    <section class="item">
-        {{> section-header name=this.institution }} {{#if location}}
-        <h5 class="location">{{location}}</h5>
-        {{/if}}
+  {{> title value="Education"}} {{#each resume.education}}
+  <section class="item">
+    {{> section-header name=this.institution }}
+    {{#if location}}
+      <h5 class="location">{{location}}</h5>
+    {{/if}}
 
-        <h4>{{#if studyType}}{{studyType}} {{/if}}{{#if area}}{{area}}{{/if}}</h4>
+    <h4>{{#if studyType}}{{studyType}} {{/if}}{{#if area}}{{area}}{{/if}}</h4>
 
-        {{#if gpa}}
-        <h5>{{gpa}}</h5>
-        {{/if}} {{#if specialization}}
-        <h5 class="specialization">{{specialization}}</h5>
-        {{/if}} {{#if courses.length}}
-        <ul class="two-column">
-            {{#each courses}}
-            <li>{{.}}</li>
-            {{/each}}
-        </ul>
-        {{/if}}
-    </section>
-    {{/each}}
+    {{#if gpa}}
+      <h5>{{gpa}}</h5>
+    {{/if}}
+    {{#if specialization}}
+      <h5 class="specialization">{{specialization}}</h5>
+    {{/if}}
+    {{#if courses.length}}
+      <ul class="two-column">
+        {{#each courses}}
+        <li>{{.}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </section>
+  {{/each}}
 </div>
 {{/if}}

@@ -1,31 +1,31 @@
 .page {
-    background: white;
-    width: $page-width;
-    min-height: $page-height;
-    display: block;
-    margin: 0 auto;
-    border-top: 10px solid $primary-color;
-    padding: 36px 22px 30px 34px;
-    @include shadow();
-    @include clearfix();
+  background: white;
+  width: $page-width;
+  min-height: $page-height;
+  display: block;
+  margin: 0 auto;
+  border-top: 10px solid $primary-color;
+  padding: 36px 22px 30px 34px;
+  @include shadow();
+  @include clearfix();
 }
 
 .left-column {
-    float: left;
-    width: $aside-width;
-    margin-right: $aside-margin;
-    word-wrap: break-word;
+  float: left;
+  width: $aside-width;
+  margin-right: $aside-margin;
+  word-wrap: break-word;
 }
 
 .right-column {
-    width: auto;
-    overflow: hidden;
+  width: auto;
+  overflow: hidden;
 }
 
 .item {
-    margin-bottom: spacing(3);
+  margin-bottom: spacing(3);
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

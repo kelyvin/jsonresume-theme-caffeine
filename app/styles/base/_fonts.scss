@@ -3,17 +3,17 @@
 // Font Mixins
 
 // Lato - 300, 400, 700; Italics
-@mixin lato($weight: 400, $isItalic: false){
-    font-family: $primary-font;
-    font-weight: $weight;
+@mixin lato($weight: 400, $isItalic: false) {
+  font-family: $primary-font;
+  font-weight: $weight;
 
-    @if $isItalic == true {
-        font-style: italic;
-    }
+  @if $isItalic==true {
+    font-style: italic;
+  }
 }
 
 // Josefin - 300, 400, 600, 700
-@mixin josefin($weight: 400){
-    font-family: $secondary-font;
-    font-weight: $weight;
+@mixin josefin($weight: 400) {
+  font-family: $secondary-font;
+  font-weight: $weight;
 }

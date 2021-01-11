@@ -1,8 +1,6 @@
-'use strict';
-
 const
-    gulp = require('gulp'),
-    $ = require('gulp-load-plugins')();
+  gulp = require('gulp'),
+  $ = require('gulp-load-plugins')();
 
 gulp.task('jshint', function () {
   return gulp.src('app/js/**/*.js')

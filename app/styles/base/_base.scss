@@ -1,123 +1,128 @@
 body {
-    @include lato();
+  @include lato();
 
-    background: $gray-lightest;
-    margin: 50px 0 100px;
-    letter-spacing: .3px;
-    color: $secondary-color;
+  background: $gray-lightest;
+  margin: 50px 0 100px;
+  letter-spacing: .3px;
+  color: $secondary-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin: 0;
 }
 
 h1 {
-    @include josefin(700);
-    @include font-size(10);
-    letter-spacing: 1px;
-    margin-bottom: 4px;
+  @include josefin(700);
+  @include font-size(10);
+  letter-spacing: 1px;
+  margin-bottom: spacing(1);
 }
 
 h2 {
-    @include josefin(300);
-    @include font-size(4);
-    letter-spacing: .5px;
+  @include josefin(300);
+  @include font-size(4);
+  letter-spacing: .5px;
 }
 
 h3 {
-    @include lato(300);
-    @include font-size(3.5);
-    letter-spacing: .4px;
+  @include lato(300);
+  @include font-size(3.5);
+  letter-spacing: .4px;
 
-    &.bold {
-        font-weight: 700;
-    }
+  &.bold {
+    font-weight: 700;
+  }
 }
 
 h4 {
-    @include lato(300);
-    @include font-size(3);
+  @include lato(300);
+  @include font-size(3);
 
-    &.bold {
-        font-weight: 700;
-    }
+  &.bold {
+    font-weight: 700;
+  }
 }
 
 h5 {
-    @include lato(300);
-    @include font-size(2.75);
+  @include lato(300);
+  @include font-size(2.75);
 
-    &.italic {
-        font-style: italic;
-    }
+  &.italic {
+    font-style: italic;
+  }
 }
 
 h6 {
-    @include lato();
-    @include font-size(2.5);
+  @include lato();
+  @include font-size(2.5);
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 
-    &:hover {
-        color: $link-color;
-    }
+  &:hover {
+    color: $link-color;
+  }
 
-    .fa-external-link {
-        font-size: 10px;
-        vertical-align: text-top;
-    }
+  .fa-external-link {
+    font-size: 10px;
+    vertical-align: text-top;
+  }
 }
 
 p,
 li {
-    @include font-size(2.75);
+  @include font-size(2.75);
 }
 
 blockquote {
-    @include font-size(2.75);
-    @include lato($isItalic: true);
+  @include font-size(2.75);
+  @include lato($isItalic: true);
 
-    margin: spacing(2) spacing(5);
+  margin: spacing(2) spacing(5);
 }
 
 em {
-    color: $gray-dark;
+  color: $gray-dark;
 }
 
 ul {
-    margin: spacing(2) 0 0;
-    -webkit-padding-start: spacing(5);
+  margin: spacing(2) 0 0;
+  -webkit-padding-start: spacing(5);
+
+  li {
+    padding-left: spacing(2);
+  }
+
+  &.minimal {
+    list-style: none;
+    padding: 0;
 
     li {
-        padding-left: spacing(2);
+      margin-bottom: 3px;
+      padding-left: 0;
     }
+  }
 
-    &.minimal {
-        list-style: none;
-        padding: 0;
+  &.two-column {
+    -webkit-column-count: 2;
+    -webkit-column-gap: spacing(5.6);
+    column-count: 2;
+    column-gap: spacing(5.6);
 
-        li {
-            margin-bottom: 3px;
-            padding-left: 0;
-        }
+    li {
+      padding-left: 0;
     }
-
-    &.two-column {
-        -webkit-column-count: 2;
-        -webkit-column-gap: spacing(5.6);
-        column-count: 2;
-        column-gap: spacing(5.6);
-
-        li {
-            padding-left: 0;
-        }
-    }
+  }
 }
 
 @page {
-    size: A4;
+  size: A4;
 }

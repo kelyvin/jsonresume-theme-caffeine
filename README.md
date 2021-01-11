@@ -25,7 +25,7 @@ This project uses [gulp](http://gulpjs.com/) and [resume-cli](https://github.com
 
 ## Quick Commands
 - `npm start` - Run the build and generate a resume html page for development
-- `npm export` - Exports the resume into a `resume.pdf` file
+- `npm run export` - Exports the resume into a `resume.pdf` file
 
 To run any default resume-cli commands, simply run all resume-cli commands against `npx resume`.
 
@@ -88,7 +88,7 @@ When you run `npm start` or choose to manually build the project using `gulp`, i
 To export your resume, you can run the following command below:
 
 ```
-npm export
+npm run export
 ```
 
 This will automatically set up an npm link with this package to your globally installed npm dependencies and enable you to run the `resume export` command from `resume-cli`. This will automatically create a `resume.pdf` file within your current directory.

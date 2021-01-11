@@ -10,6 +10,5 @@ gulp.task('styles', function () {
     .pipe($.plumber())
     .pipe($.sass().on('error', $.sass.logError))
     .pipe(cssImport())
-    .pipe($.autoprefixer({browsers: ['last 1 version']}))
     .pipe(gulp.dest('public/styles'));
 });

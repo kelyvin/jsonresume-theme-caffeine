@@ -6,15 +6,13 @@ const
 
 gulp.task('watch', function() {
     let ports = {
-        resumeCli: 4000,
+        serve: 3000,
         browserSync: 4001
     };
 
-    // Prevent hanging white page by setting an arbitrary timeout
-    //  to give the `resume` task enough time to start up
     setTimeout(function() {
         browserSync.init({
-            proxy: 'localhost:' + ports.resumeCli,    //resume-cli port
+            proxy: 'localhost:' + ports.serve,
             reloadDelay: 300,
             port: ports.browserSync
         });

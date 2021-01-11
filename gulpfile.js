@@ -1,10 +1,12 @@
 'use strict';
 
 var gulp = require('gulp');
-var requireDir = require('require-dir');
-requireDir('./gulp/', { recurse: true });
+var HubRegistry = require('gulp-hub')
 
+const hub = new HubRegistry(['gulp/config/util/*.js', 'gulp/config/compile/*.js', 'gulp/tasks/*.js'])
+gulp.registry(hub)
 
-gulp.task('default', ['clean'], function() {
-    gulp.start('build');
-});
+const build = gulp.series('clean', 'styles', 'html', 'images', 'extras', 'resume');
+
+gulp.task('build', build);
+gulp.task('default', build);

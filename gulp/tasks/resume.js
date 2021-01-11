@@ -1,14 +1,16 @@
 'use strict';
+
 const
     gulp = require('gulp'),
-    exec = require('child_process').exec;
+    fs = require('fs'),
+    $ = require('gulp-load-plugins')();
 
-gulp.task('resume', function (cb) {
-    let command = 'resume serve --silent';
+const resume = () => {
+    if (!fs.existsSync('resume.json')) {
+        fs.createReadStream('resume-sample.json').pipe(fs.createWriteStream('resume.json'));
+    }
 
-    exec(command, function(err, stdout, stderr) {
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-    });
-});
+    return gulp.src('public/**/*').pipe($.size({title: 'build', gzip: true}));
+}
+
+gulp.task('resume', resume);

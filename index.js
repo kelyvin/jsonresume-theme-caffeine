@@ -40,6 +40,15 @@ handlebars.registerHelper({
 
   formatDate: function (date) {
     return moment(date).format('MM/YYYY');
+  },
+
+  filterRepeatKey: function(list, key) {
+    return list.map((curr, i, array) => {
+      if (curr[key] == array[i-1]?.[key]) {
+        curr.repeated = true
+      }
+      return curr
+    })
   }
 });
 

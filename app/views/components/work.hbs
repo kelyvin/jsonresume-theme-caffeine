@@ -2,9 +2,13 @@
 <div class="container work-container">
   {{> title value="Experience"}}
 
-  {{#each resume.work}}
+  {{#each (filterRepeatKey resume.work "company")}}
   <section class="item">
+    {{#if repeated}}
+    {{> section-header name="" }}
+    {{else}}
     {{> section-header name=this.company }}
+    {{/if}}
 
     {{#if position}}
       <h4>{{position}}</h4>

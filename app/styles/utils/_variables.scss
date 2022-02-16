@@ -1,25 +1,25 @@
 /*----- Colors -----*/
 
-$gray-darkest           : #333;
-$gray-darker            : #666;
-$gray-dark              : #999;
-$gray                   : #ccc;
-$gray-light             : #ddd;
-$gray-lighter           : #eee;
-$gray-lightest          : #f8f8f8;
+$gray-darkest           : #161320;
+$gray-darker            : #1A1826;
+$gray-dark              : #1E1E2E;
+$gray                   : #302D41;
+$gray-light             : #575268;
+$gray-lighter           : #988BA2;
+$gray-lightest          : #C3BAC6;
 
-$slate-gray             : #39424B;
-$slate-green            : #56817A;
+$white           : #D9E0EE;
+$red           : #E8A2AF;
 
-$primary-color          : $slate-green;
-$secondary-color        : $slate-gray;
+$primary-color          : $red;
+$secondary-color        : $white;
 
-$link-color             : #2895F1;
+$link-color             : #F2CDCD;
 
 /*----- Fonts -----*/
 
-$primary-font               : 'Lato', Helvetica, Arial, sans-serif;
-$secondary-font             : 'Josefin Sans', Helvetica, Arial, sans-serif;
+$primary-font               : 'Poppins', sans-serif;
+$secondary-font             : 'Nunito', sans-serif;
 
 /*----- Dimensions and sizes -----*/
 

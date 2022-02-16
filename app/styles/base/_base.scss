@@ -1,5 +1,6 @@
 body {
-  @include lato();
+  @include poppins();
+  @include Nunito();
 
   background: $gray-lightest;
   margin: 50px 0 100px;
@@ -18,48 +19,55 @@ h6 {
 }
 
 h1 {
-  @include josefin(700);
+  @include poppins(700);
   @include font-size(10);
   letter-spacing: 1px;
   margin-bottom: spacing(1);
+  color: #B5E8E0;
 }
 
 h2 {
-  @include josefin(300);
+  @include poppins(300);
   @include font-size(4);
   letter-spacing: .5px;
+  color: #F8BD96;
 }
 
 h3 {
-  @include lato(300);
+  @include Nunito(300);
   @include font-size(3.5);
   letter-spacing: .4px;
 
   &.bold {
     font-weight: 700;
   }
+
+  color: #C9CBFF;
 }
 
 h4 {
-  @include lato(300);
+  @include poppins(300);
   @include font-size(3);
 
   &.bold {
     font-weight: 700;
   }
+  color: #F2CDCD;
 }
 
 h5 {
-  @include lato(300);
+  @include Nunito(300);
   @include font-size(2.75);
 
   &.italic {
     font-style: italic;
   }
+
+  color: #F5C2E7;
 }
 
 h6 {
-  @include lato();
+  @include Nunito();
   @include font-size(2.5);
 }
 
@@ -75,6 +83,9 @@ a {
     font-size: 10px;
     vertical-align: text-top;
   }
+
+  color: #F5E0DC;
+
 }
 
 p,
@@ -84,7 +95,7 @@ li {
 
 blockquote {
   @include font-size(2.75);
-  @include lato($isItalic: true);
+  @include Nunito(2.45);
 
   margin: spacing(2) spacing(5);
 }
@@ -124,5 +135,5 @@ ul {
 }
 
 @page {
-  size: A4;
+  size: us-letter;
 }

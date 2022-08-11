@@ -1,0 +1,11 @@
+{{#if resume.certificates.length}}
+<div class="container certificates-container">
+  {{> title value="Certificates"}}
+
+  {{#each resume.certificates}}
+  <section class="item">
+    {{> section-header name=this.name }}
+  </section>
+  {{/each}}
+</div>
+{{/if}}

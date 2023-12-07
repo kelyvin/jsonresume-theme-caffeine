@@ -1,0 +1,21 @@
+{{#if resume.certificates.length}}
+<div class="container education-container">
+  {{> title value="Certificates"}} {{#each resume.certificates}}
+  <section class="item">
+    {{> section-header name=this.name }}
+    {{#if location}}
+      <h5 class="location">{{location}}</h5>
+    {{/if}}
+
+    <h4>{{#if issuer}}{{issuer}}{{/if}}</h4>
+        {{#if courses.length}}
+      <ul class="two-column">
+        {{#each courses}}
+        <li>{{.}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </section>
+  {{/each}}
+</div>
+{{/if}}

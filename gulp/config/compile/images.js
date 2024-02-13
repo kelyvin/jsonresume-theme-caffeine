@@ -1,10 +1,13 @@
 const
   gulp = require('gulp'),
-  $ = require('gulp-load-plugins')();
+  imagemin = require('gulp-imagemin'),
+  $ = require('gulp-load-plugins')({
+  pattern: ['gulp-*', '!gulp-size']
+});
 
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin({
+    .pipe($.cache(imagemin({
       progressive: true,
       interlaced: true
     })))
